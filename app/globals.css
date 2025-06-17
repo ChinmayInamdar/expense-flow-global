@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+    --sidebar-background: 224 71% 4%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 215 27.9% 16.9%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 27.9% 16.9%;
+    --sidebar-ring: 216 12.2% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Dark theme specific improvements */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .bg-gradient-to-br {
+  @apply from-slate-900 via-slate-800 to-slate-900;
+}
+
+.dark .text-gray-900 {
+  @apply text-slate-100;
+}
+
+.dark .text-gray-600 {
+  @apply text-slate-400;
+}
+
+.dark .text-gray-500 {
+  @apply text-slate-500;
+}
+
+.dark .bg-white\/95 {
+  @apply bg-slate-900/95;
+}
+
+.dark .border-gray-200 {
+  @apply border-slate-700;
+}
+
+.dark .bg-gray-50 {
+  @apply bg-slate-800;
+}
+
+.dark .bg-gray-100 {
+  @apply bg-slate-800;
+}
+
+.dark .hover\:bg-gray-100:hover {
+  @apply hover:bg-slate-700;
+}
+
+/* Card improvements for dark mode */
+.dark .bg-white {
+  @apply bg-slate-900;
+}
+
+.dark .shadow-lg {
+  @apply shadow-slate-900/50;
+}
+
+.dark .shadow-xl {
+  @apply shadow-slate-900/50;
+}
+
+.dark .shadow-2xl {
+  @apply shadow-slate-900/80;
+}
+
+/* Button improvements */
+.dark .bg-blue-100 {
+  @apply bg-blue-900/30;
+}
+
+.dark .bg-green-100 {
+  @apply bg-green-900/30;
+}
+
+.dark .bg-purple-100 {
+  @apply bg-purple-900/30;
+}
+
+.dark .bg-orange-100 {
+  @apply bg-orange-900/30;
+}
+
+.dark .text-blue-600 {
+  @apply text-blue-400;
+}
+
+.dark .text-green-600 {
+  @apply text-green-400;
+}
+
+.dark .text-purple-600 {
+  @apply text-purple-400;
+}
+
+.dark .text-orange-600 {
+  @apply text-orange-400;
+}
+
+/* Gradient text improvements */
+.dark .bg-gradient-to-r.from-blue-600.to-purple-600 {
+  @apply from-blue-400 to-purple-400;
+}
+
+/* Input and form improvements */
+.dark input[type="email"],
+.dark input[type="password"],
+.dark input[type="text"],
+.dark input[type="date"] {
+  @apply bg-slate-800 border-slate-600 text-slate-100;
+}
+
+.dark input[type="email"]:focus,
+.dark input[type="password"]:focus,
+.dark input[type="text"]:focus,
+.dark input[type="date"]:focus {
+  @apply border-blue-500 ring-blue-500/20;
+}
+
+/* Table improvements */
+.dark .bg-gray-50 {
+  @apply bg-slate-800/50;
+}
+
+/* Alert improvements */
+.dark .border-blue-200 {
+  @apply border-blue-800;
+}
+
+.dark .bg-blue-50 {
+  @apply bg-blue-900/20;
+}
+
+.dark .border-green-200 {
+  @apply border-green-800;
+}
+
+.dark .bg-green-50 {
+  @apply bg-green-900/20;
+}
+
+.dark .border-purple-200 {
+  @apply border-purple-800;
+}
+
+.dark .bg-purple-50 {
+  @apply bg-purple-900/20;
+}
+
+/* Progress bar improvements */
+.dark .bg-primary {
+  @apply bg-blue-500;
+}
+
+/* Badge improvements */
+.dark .bg-secondary {
+  @apply bg-slate-700 text-slate-200;
+}
+
+/* Dropdown improvements */
+.dark [data-radix-popper-content-wrapper] {
+  @apply bg-slate-900 border-slate-700;
+}
