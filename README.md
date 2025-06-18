@@ -12,13 +12,6 @@ ExpenseFlowGlobal is a full-stack web application designed to streamline expense
 - [System Architecture](#system-architecture)
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Local Setup](#local-setup)
-- [Folder Structure](#folder-structure)
-- [Future Improvements](#future-improvements)
-- [License](#license)
-- [Contact](#contact)
 
 ## Problem Statement
 
@@ -33,17 +26,19 @@ These challenges lead to lost productivity, inaccurate financial reporting, and 
 
 ## The Solution: ExpenseFlowGlobal
 
-ExpenseFlowGlobal tackles these problems head-on by providing a seamless, automated, and intelligent platform. Our solution digitizes and simplifies the entire expense management workflow, from receipt capture to final analysis. By leveraging cutting-edge AI for data extraction and real-time APIs for currency conversion, we empower users to manage their global expenses with unprecedented ease and accuracy.
+ExpenseFlowGlobal addresses these challenges directly by offering a seamless, automated, and intelligent platform. Our solution digitizes and simplifies the entire expense management workflow, from receipt capture to final analysis. By leveraging cutting-edge AI for data extraction and real-time APIs for currency conversion, we empower users to manage their global expenses with unprecedented ease and accuracy.
 
 ## Live Demo
 
 https://expense-flow-global.vercel.app/
 
-<img src="https://user-images.githubusercontent.com/your-username/your-repo/your-screenshot.png" alt="ExpenseFlowGlobal Dashboard" width="800">
+<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/img.png" alt="ExpenseFlowGlobal Dashboard" width="800">
 
 ## Detailed System Architecture
 
 ExpenseFlowGlobal is engineered as a full-stack, serverless web application using Next.js. The architecture is designed for scalability, type-safety, and a seamless developer experience. It decouples the frontend, backend logic, data persistence, and external AI/data services into distinct, manageable layers.
+
+<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/sys.png" alt="ExpenseFlowGlobal Dashboard" width="800">
 
 ### Architectural Breakdown
 
