@@ -1,5 +1,7 @@
 # ExpenseFlowGlobal: AI-Powered Expense Reconciliation
 
+<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/img.png" alt="ExpenseFlowGlobal Dashboard" width="800">
+
 ExpenseFlowGlobal is a full-stack web application designed to streamline expense management through intelligent, AI-driven automation. It allows users to upload receipt images, automatically extracts key information using Google's Gemini AI, and provides powerful tools for multi-currency expense reconciliation and analysis.
 
 ---
@@ -32,13 +34,11 @@ ExpenseFlowGlobal addresses these challenges directly by offering a seamless, au
 
 https://expense-flow-global.vercel.app/
 
-<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/img.png" alt="ExpenseFlowGlobal Dashboard" width="800">
-
 ## Detailed System Architecture
 
 ExpenseFlowGlobal is engineered as a full-stack, serverless web application using Next.js. The architecture is designed for scalability, type-safety, and a seamless developer experience. It decouples the frontend, backend logic, data persistence, and external AI/data services into distinct, manageable layers.
 
-<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/sys.png" alt="ExpenseFlowGlobal Dashboard" width="800">
+<img src="https://raw.githubusercontent.com/ChinmayInamdar/expense-flow-global/main/sys1.png" alt="ExpenseFlowGlobal Dashboard" width="800">
 
 ### Architectural Breakdown
 
